@@ -6,13 +6,13 @@ class InventoryPage {
       cartLink: () => cy.get('.shopping_cart_link')
       }
 
+      // Click the Add to Cart button for the target product
       addItemToCart() {
-        // Click the Add to Cart button for the target product
         this.elements.addtToCartBtn().click()
       }
 
+      // Click the cart icon to navigate to the cart page
       goToCart() {
-        // Click the cart icon to navigate to the cart page
         this.elements.cartLink().click()
       }
 }

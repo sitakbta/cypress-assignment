@@ -7,19 +7,18 @@ class CartPage {
         // Checkout button on the cart page
         checkoutBtn: () => cy.get('[data-test="checkout"]')
     }
-
+    // Assert the cart contains the expected product name
     verifyItemName(expected) {
-        // Assert the cart contains the expected product name
         this.elements.cartItemName().should('contain', expected)
     }
 
+    // Assert the cart item price matches the expected price
     verifyItemPrice(expectedPrice) {
-        // Assert the cart item price matches the expected price
         this.elements.cartItemPrice().should('contain', expectedPrice)
     }
 
+    // Proceed to the checkout flow
     proceedToCheckout() {
-        // Proceed to the checkout flow
         this.elements.checkoutBtn().click()
     }
 }

@@ -7,8 +7,8 @@ describe('Sauce Demo Tests', () => {
   const inventoryPage = new InventoryPage()
   const cartPage = new CartPage()
   
+  // Navigate to the Sauce Demo login page before each test
   beforeEach(() => {
-    // Navigate to the Sauce Demo login page before each test
     cy.visit('https://saucedemo.com')
   })
 
