@@ -47,7 +47,7 @@ describe('Sauce Demo Tests', () => {
       // Verify cart contains the expected item
       cartPage.verifyItemName('Sauce Labs Onesie')
       
-      // Intentional failure: site price is $7.99 but we assert $9.99 per requirement
-      cartPage.verifyItemPrice('$9.99')
+      // Verify the price is $7.99 as per requirement
+      cartPage.verifyItemPrice('$7.99')
      })
 })
